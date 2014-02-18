@@ -1,0 +1,2 @@
+Autoenable charger
+Update BOM
