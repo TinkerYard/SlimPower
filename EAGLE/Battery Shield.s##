@@ -71,12 +71,12 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="Beschreib" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="BD-Top" color="5" fill="1" visible="yes" active="yes"/>
@@ -2885,49 +2885,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="127" y1="66.04" x2="233.68" y2="66.04" width="0.2032" layer="95" style="shortdash"/>
 <text x="71.12" y="63.5" size="1.778" layer="95" align="center">Battery Charger</text>
 <text x="180.34" y="63.5" size="1.778" layer="95" align="center">Boost Regulator</text>
-<text x="124.46" y="76.2" size="1.27" layer="95">recalculte RT1 and RT2
-depending on the characteristics
-of the 10K NTC thermistor</text>
-<wire x1="121.92" y1="73.66" x2="121.92" y2="83.82" width="0" layer="95"/>
-<wire x1="121.92" y1="83.82" x2="152.4" y2="83.82" width="0" layer="95"/>
-<wire x1="152.4" y1="83.82" x2="152.4" y2="73.66" width="0" layer="95"/>
-<wire x1="152.4" y1="73.66" x2="121.92" y2="73.66" width="0" layer="95"/>
-<text x="30.48" y="71.12" size="1.27" layer="95">charge current = 1000V/PROG1</text>
-<text x="214.884" y="86.106" size="1.27" layer="95">R1 = </text>
-<text x="219.456" y="86.106" size="1.27" layer="95">R2</text>
-<text x="222.25" y="86.106" size="1.27" layer="95">x</text>
-<text x="224.028" y="86.868" size="1.27" layer="95">Vout</text>
-<text x="224.282" y="84.582" size="1.27" layer="95">VFB</text>
-<text x="228.854" y="86.106" size="1.27" layer="95">- 1</text>
-<wire x1="223.774" y1="86.36" x2="228.092" y2="86.36" width="0.2032" layer="95"/>
-<wire x1="223.774" y1="88.646" x2="223.266" y2="88.138" width="0.0508" layer="95"/>
-<wire x1="223.266" y1="88.138" x2="223.266" y2="84.582" width="0.0508" layer="95"/>
-<wire x1="223.266" y1="84.582" x2="223.774" y2="84.074" width="0.0508" layer="95"/>
-<wire x1="230.886" y1="88.646" x2="231.394" y2="88.138" width="0.0508" layer="95"/>
-<wire x1="231.394" y1="88.138" x2="231.394" y2="84.582" width="0.0508" layer="95"/>
-<wire x1="231.394" y1="84.582" x2="230.886" y2="84.074" width="0.0508" layer="95"/>
-<wire x1="213.36" y1="83.82" x2="213.36" y2="88.9" width="0.0508" layer="95"/>
-<wire x1="213.36" y1="88.9" x2="233.68" y2="88.9" width="0.0508" layer="95"/>
-<wire x1="233.68" y1="88.9" x2="233.68" y2="83.82" width="0.0508" layer="95"/>
-<wire x1="233.68" y1="83.82" x2="213.36" y2="83.82" width="0.0508" layer="95"/>
 <text x="149.86" y="25.4" size="6.4516" layer="94">Spark Devices</text>
-<text x="147.32" y="36.83" size="1.27" layer="95" font="vector">Battery Shield design by Spark Devices
-Component libraries by Adafruit and Sparkfun</text>
-<text x="5.08" y="5.08" size="1.778" layer="95" font="vector">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
-("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
-PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
-IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-OR NON-INFRINGEMENT.
-
-Spark may make changes to specifications and product descriptions at any 
-time, without notice. The Customer must not rely on the absence or 
-characteristics of any features or instructions marked "reserved" or 
-"undefined." Spark reserves these for future definition and shall have 
-no responsibility whatsoever for conflicts or incompatibilities arising 
-from future changes to them. The product information on the Web Site or 
-Materials is subject to change without notice. Do not finalize a design 
-with this information. 
-Spark is a registered trademark.</text>
 <text x="236.22" y="7.62" size="2.54" layer="94" font="vector">2.0.1</text>
 </plain>
 <instances>
@@ -3091,6 +3049,7 @@ Spark is a registered trademark.</text>
 <wire x1="102.87" y1="101.6" x2="102.87" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="BATT-" gate="G$1" pin="P"/>
 <wire x1="102.87" y1="106.68" x2="106.68" y2="106.68" width="0.1524" layer="91"/>
+<junction x="102.87" y="101.6"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
@@ -3333,6 +3292,7 @@ Spark is a registered trademark.</text>
 <pinref part="CHARGE+" gate="G$1" pin="P"/>
 <pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="44.45" y1="106.68" x2="44.45" y2="109.22" width="0.1524" layer="91"/>
+<junction x="44.45" y="106.68"/>
 </segment>
 </net>
 <net name="DGND" class="0">
@@ -3404,12 +3364,28 @@ Spark is a registered trademark.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,152.4,104.14,GND,DGND,,,,"/>
+<approved hash="102,1,152.4,101.6,PAD,GND,,,,"/>
+<approved hash="102,1,152.4,99.06,PAD,GND,,,,"/>
+<approved hash="102,1,152.4,96.52,PAD,GND,,,,"/>
+<approved hash="102,1,187.96,99.06,PAD,GND,,,,"/>
+<approved hash="102,1,187.96,101.6,PAD,GND,,,,"/>
+<approved hash="102,1,187.96,104.14,PGND,GND,,,,"/>
+<approved hash="102,1,152.4,114.3,VIN,VBATT_OUT,,,,"/>
+<approved hash="104,1,67.31,86.36,IC1,GND1,GND,,,"/>
+<approved hash="104,1,69.85,86.36,IC1,GND2,GND,,,"/>
+<approved hash="206,1,90.17,111.76,N$5,,,,,"/>
+<approved hash="206,1,90.17,106.68,N$5,,,,,"/>
+<approved hash="206,1,90.17,109.22,N$5,,,,,"/>
+<approved hash="206,1,90.17,119.38,VBATT_OUT,,,,,"/>
+<approved hash="206,1,90.17,121.92,VBATT_OUT,,,,,"/>
+<approved hash="208,1,152.4,114.3,VBATT_OUT,sup,,,,"/>
+<approved hash="208,1,90.17,119.38,VBATT_OUT,out,,,,"/>
+<approved hash="208,1,90.17,121.92,VBATT_OUT,out,,,,"/>
+<approved hash="108,1,102.87,101.6,GND,,,,,"/>
+<approved hash="108,1,44.45,106.68,VBUS,,,,,"/>
+</errors>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
