@@ -1,0 +1,11 @@
+.HEADER
+LIBRARY_FILE 3.0 "Commend International >generate_3d_data_v091.ulp V0.91<" 2014/01/20.16:01:17 1
+.END_HEADER
+.ELECTRICAL
+QFN20.0 QFN20_adafruit.0 MM 127.00
+0 -1.97 2.03 0
+0 1.97 2.03 0
+0 1.97 -1.97 0
+0 -1.97 -1.97 0
+0 -1.97 2.03 0
+.END_ELECTRICAL
